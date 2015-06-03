@@ -18,8 +18,9 @@ RUN apt-get purge -y -q --auto-remove gcc make wget
 # expose some ports
 # 500/udp ISAKMP
 # 4500/udp IPSEC NAT
+# 1701/UDP L2VPN
 # 443/tcp HTTPS
-EXPOSE 500/udp 4500/udp 443/tcp
+EXPOSE 500/udp 4500/udp 1701/udp 443/tcp
 
 # use execsvc to run in foreground
 CMD ["/usr/local/vpnserver/vpnserver","execsvc"]
