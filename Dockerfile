@@ -1,7 +1,7 @@
 FROM debian:latest
 MAINTAINER John Grinwis "john@grinwis.com"
 
-ENV VERSION v4.17-9562-beta-2015.05.30
+ENV VERSION v4.19-9605-beta-2016.05.06
 WORKDIR /usr/local/vpnserver
 
 RUN apt-get -qq update
